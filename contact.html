@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: red;
+   color: white;
+   text-align: center;
+}
+</style>
+    <meta charset="UTF-8" />
+    <title>Zahran's Website</title>
+    <!----CSS link----->
+    <link rel="stylesheet" href="style.css" />
+    </head>
+  <body>
+    <div class="hero">
+      <nav>
+        <img src="logo.png" class="logo" />
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="About.html">About</a></li>
+          <li><a href="playlist.html">Playlist</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="container">
+        <form action="action_page.php">
+
+            <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+      
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      
+          <label for="country">Country</label>
+          <select id="country" name="country">
+            <option value="australia">Kenya</option>
+            <option value="canada">India</option>
+            <option value="usa">Oman</option>
+          </select>
+      
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      
+          <button2 class="btn" onclick="openPopup()">Submit</button2>
+
+        </form>
+
+        <div class="popup" id="popup">
+            <h2>Thank you!</h2>
+            <p>Your Message Has been sent</p>
+        </div>
+      </div>
+
+      <script>
+let popup= document.getElementById("popup");
+
+function openPopup(){
+    popup.classList.add("open-popup");
+}
+
+      </script>
+
+      <div class="footer">
+        <p>Created By: Zahran Mohammed Almawali</p>
+        <p>Student ID: 8096</p>
+      </div>
+
